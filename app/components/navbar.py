@@ -1,13 +1,13 @@
 import streamlit as st
-import base64
+from utils.path_helper import get_asset_path
+from utils.image_loader import load_image_base64
 
 
 
 def render_navbar(current_page='home'):
 
-    # Encode logo
-    with open("assets/logo.svg", "rb") as f:
-        svg_base64 = base64.b64encode(f.read()).decode()
+    logo_path = get_asset_path('creator.png')
+    logo_src = load_image_base64(logo_path)
     
     # Handle page state from query param
     page = st.query_params.get("page", ["home"])[0]
@@ -95,7 +95,7 @@ def render_navbar(current_page='home'):
 
         <div class="navbar">
             <div class="nav-left">
-                <img src="data:image/svg+xml;base64,{svg_base64}" alt="logo" style="width:40px; height:40px;" />
+                <img src="data:image/svg+xml;base64,{logo_src}" alt="logo" style="width:40px; height:40px;" />
                 <span style="color:#FF5F1F; font-weight:700; font-size:1.5rem; letter-spacing:0.5px; margin-left:8px; user-select:none;">pMp</span>
             </div>
             <div class="nav-right">
