@@ -95,7 +95,7 @@ def render_navbar(current_page='home'):
 
         <div class="navbar">
             <div class="nav-left">
-                <img src="data:image/svg+xml;base64,{logo_src}" alt="logo" style="width:40px; height:40px;" />
+                <img src="{logo_src}" alt="logo" style="width:40px; height:40px;" />
                 <span style="color:#FF5F1F; font-weight:700; font-size:1.5rem; letter-spacing:0.5px; margin-left:8px; user-select:none;">pMp</span>
             </div>
             <div class="nav-right">
