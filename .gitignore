@@ -1,0 +1,27 @@
+# 👉 Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+*.pyd
+
+# 👉 Virtual Environment
+env/
+venv/
+ENV/
+env.bak/
+*.env
+
+# 👉 Streamlit
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# 👉 VSCode
+.vscode/
+
+# 👉 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
