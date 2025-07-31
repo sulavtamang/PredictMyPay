@@ -6,7 +6,7 @@ from utils.image_loader import load_image_base64
 
 def render_navbar(current_page='home'):
 
-    logo_path = get_asset_path('creator.png')
+    logo_path = get_asset_path('logo.svg')
     logo_src = load_image_base64(logo_path)
     
     # Handle page state from query param
