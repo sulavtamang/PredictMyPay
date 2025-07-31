@@ -1,8 +1,6 @@
 import streamlit as st
 from components.navbar import render_navbar
 from utils.model import predict_salary
-import streamlit.components.v1 as components
-
 
 def predict():
     render_navbar(current_page='predict')

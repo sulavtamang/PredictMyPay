@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_javascript import st_javascript
 from components.navbar import render_navbar
 
 def home():
